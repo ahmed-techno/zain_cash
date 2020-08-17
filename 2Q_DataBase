@@ -1,0 +1,3 @@
+// the answer would be 
+SELECT GROUP_CONCAT(concat(`First name`,' ',`Last name`) SEPARATOR ',')as full_name,city,sum(salary) from cash group by city;
+
