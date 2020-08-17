@@ -1,3 +1,21 @@
 // the answer would be 
+
 SELECT GROUP_CONCAT(concat(`First name`,' ',`Last name`) SEPARATOR ',')as full_name,city,sum(salary) from cash group by city;
 
+
+id First name Last name city salary
+1 Henry Cahil Baghdad 2500
+2 Jimmy clive Najaf 1200
+3 James cage Najaf 3300
+4 Adam jones Baghdad 12000
+5 Sally Johnson Babil 500
+6 Monica Selles Kut 1230
+ 
+ 
+After Solve would be : 
+
+full_name city total_salary
+Sally Johnson Babil 500
+Henry Cahil,Adam jones Baghdad 14500
+Monica Selles Kut 1230
+Jimmy clive,James cage Najaf 4500
